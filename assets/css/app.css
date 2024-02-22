@@ -1,0 +1,74 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+@font-face {
+  font-family: NunitoRegular;
+  src: url(../fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: NunitoBold;
+  src: url(../fonts/Nunito-Bold.ttf);
+}
+
+body{
+	font-family: NunitoRegular
+}
+
+
+
+
+
+
+#loader{
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  padding-left: 40%;
+  padding-top: 20%;
+  background-color:white;
+  opacity: 0.8;
+}
+
+/* Define an animation behavior */
+@keyframes spinner {
+  to { transform: rotate(360deg); }
+}
+/* This is the class name given by the Font Awesome component when icon contains 'spinner' */
+#loader img{
+  /* Apply 'spinner' keyframes looping once every second (1s)  */
+  animation: spinner 2s linear infinite;
+}
+
+#flash-message-error{
+  display: none;
+  width: 100%;
+  height:50px;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  background-color: #f74239;
+  color: white;
+}
+
+#flash-message-success{
+  display: none;
+  width: 100%;
+  height:50px;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  background-color: #47c958;
+  color: white;
+}

@@ -1,0 +1,1 @@
+[14-Dec-2022 15:25:52 UTC] PHP Fatal error:  Array and string offset access syntax with curly braces is no longer supported in /home/u8633137/public_html/member/application/third_party/PHPExcel-1.8/Classes/PHPExcel/Shared/String.php on line 526
